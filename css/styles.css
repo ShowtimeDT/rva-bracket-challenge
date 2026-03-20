@@ -523,15 +523,25 @@ main:has(.picks-table-wrap) {
   main { padding: 0 0.5rem 2rem; }
   .live-games { grid-template-columns: 1fr; }
 
+  .picks-table {
+    min-width: 0;
+  }
+
+  .picks-table td:first-child,
+  .picks-table th:first-child {
+    max-width: 90px;
+    width: 90px;
+  }
+
   .name-cell {
-    max-width: 72px;
-    font-size: 0.7rem;
+    max-width: 80px;
+    font-size: 0.72rem;
   }
 
   .picks-table th,
   .picks-table td {
     font-size: 0.75rem;
-    padding: 0.4rem 0.5rem;
+    padding: 0.35rem 0.4rem;
   }
 }
 
