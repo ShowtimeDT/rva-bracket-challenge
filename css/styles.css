@@ -259,10 +259,13 @@ main:has(.picks-table-wrap) {
   background: var(--bg-card);
   font-weight: 700;
   text-align: left;
-  min-width: 110px;
+}
+
+.name-cell {
   max-width: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .picks-table th:first-child {
@@ -520,12 +523,9 @@ main:has(.picks-table-wrap) {
   main { padding: 0 0.5rem 2rem; }
   .live-games { grid-template-columns: 1fr; }
 
-  .picks-table td:first-child,
-  .picks-table th:first-child {
-    min-width: 70px;
-    max-width: 80px;
+  .name-cell {
+    max-width: 72px;
     font-size: 0.7rem;
-    padding: 0.4rem 0.4rem;
   }
 
   .picks-table th,

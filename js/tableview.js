@@ -83,7 +83,7 @@ const TableView = (() => {
     html += '</tr></thead><tbody>';
 
     for (const entry of state.entries) {
-      html += `<tr><td>${esc(entry.name)}</td>`;
+      html += `<tr><td><div class="name-cell">${esc(entry.name)}</div></td>`;
 
       // Index this entry's R64 picks by propositionId
       const pickByProp = {};
@@ -145,7 +145,7 @@ const TableView = (() => {
     html += '</tr></thead><tbody>';
 
     for (const entry of state.entries) {
-      html += `<tr><td>${esc(entry.name)}</td>`;
+      html += `<tr><td><div class="name-cell">${esc(entry.name)}</div></td>`;
 
       const pickByProp = {};
       for (const pick of entry.pickStatuses) {
