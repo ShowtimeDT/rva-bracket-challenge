@@ -531,11 +531,19 @@ main:has(.picks-table-wrap) {
   .picks-table th:first-child {
     max-width: 90px;
     width: 90px;
+    white-space: normal;
   }
 
   .name-cell {
     max-width: 80px;
+    width: 80px;
     font-size: 0.72rem;
+    white-space: normal;
+    word-break: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   .picks-table th,
