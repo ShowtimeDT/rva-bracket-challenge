@@ -153,7 +153,9 @@ const Data = (() => {
             // Check if the team was eliminated in a PRIOR round (never made it here)
             // vs lost IN this round's actual game
             if (elimRound !== undefined && elimRound < roundIndex) {
-              status = 'eliminated'; // team was knocked out before this round
+              const pickProp = propositionMap[pick.propositionId];
+              const gameDecided = pickProp?.correctOutcomes?.length > 0;
+              status = gameDecided ? 'eliminated' : 'eliminated-pending';
             } else {
               status = 'incorrect'; // team played in this round and lost
             }
