@@ -3,7 +3,7 @@
  */
 const CONFIG = {
   YEAR: 2026,
-  ESPN_GROUP_ID: '8d6ff08f-1c5a-48f3-aa8e-3335f087ab81',
+  ESPN_GROUP_ID: '14f8ec88-78d9-4e7b-a9dc-d61047187905',
 
   // Point values per round
   POINTS: {

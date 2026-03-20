@@ -131,7 +131,7 @@ const LiveScores = (() => {
 
     if (!pickedTeam0.length && !pickedTeam1.length) return '';
 
-    let html = '<div class="live-picks-section"><h4>Family Picks</h4>';
+    let html = '<div class="live-picks-section"><h4>Group Picks</h4>';
 
     if (pickedTeam0.length) {
       html += `<div class="live-pick-group">
