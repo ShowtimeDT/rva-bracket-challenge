@@ -528,6 +528,11 @@ main:has(.picks-table-wrap) {
   main { padding: 0 0.5rem 2rem; }
   .live-games { grid-template-columns: 1fr; }
 
+  .leaderboard-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .picks-table {
     min-width: 0;
   }
