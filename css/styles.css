@@ -96,6 +96,7 @@ main:has(.picks-table-wrap) {
 .pick-correct   { background: #1a3a25; color: #6fcf8a; }
 .pick-incorrect { background: #3a1a1a; color: #e88; }
 .pick-eliminated { background: #2a2a2a; text-decoration: line-through; color: #666; }
+.pick-eliminated-pending { background: var(--bg-row); text-decoration: line-through; color: #888; }
 .pick-pending   { background: var(--bg-row); }
 
 /* ===== Leaderboard Card ===== */

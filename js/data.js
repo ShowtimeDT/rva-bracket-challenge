@@ -159,7 +159,9 @@ const Data = (() => {
             }
           } else if (elimRound !== undefined && elimRound < roundIndex) {
             // Team was knocked out in an earlier round, game hasn't been scored yet
-            status = 'eliminated';
+            const pickProp = propositionMap[pick.propositionId];
+            const gameDecided = pickProp?.correctOutcomes?.length > 0;
+            status = gameDecided ? 'eliminated' : 'eliminated-pending';
           } else if (elimRound !== undefined && elimRound === roundIndex) {
             // Team lost in this round — but ESPN hasn't marked the pick yet
             status = 'incorrect';
