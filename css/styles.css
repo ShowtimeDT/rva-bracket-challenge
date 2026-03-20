@@ -260,6 +260,9 @@ main:has(.picks-table-wrap) {
   font-weight: 700;
   text-align: left;
   min-width: 110px;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .picks-table th:first-child {
@@ -516,6 +519,20 @@ main:has(.picks-table-wrap) {
   .nav-link { font-size: 0.8rem; padding: 0.35rem 0.7rem; }
   main { padding: 0 0.5rem 2rem; }
   .live-games { grid-template-columns: 1fr; }
+
+  .picks-table td:first-child,
+  .picks-table th:first-child {
+    min-width: 70px;
+    max-width: 80px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.4rem;
+  }
+
+  .picks-table th,
+  .picks-table td {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
 
 /* Phone portrait: prompt to rotate for bracket */
